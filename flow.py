@@ -1,7 +1,7 @@
 import httpx
 from prefect import flow
 
-#@flow
+@flow
 def get_repo_info():
     #url = "https://api.github.com/repos/PrefectHQ/prefect"
     url = "https://github.com/PrefectHQ/prefect.git"
