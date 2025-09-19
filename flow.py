@@ -1,4 +1,4 @@
-rom prefect import flow, task
+from prefect import flow, task
 
 # 1. 定义任务：封装打印逻辑
 @task(log_prints=True)  # 启用任务的日志打印
