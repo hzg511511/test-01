@@ -1,9 +1,13 @@
 from prefect import flow, task
 import time
 
+def bye():
+    print("bye~bye")
+
 # 1. 定义任务：封装打印逻辑
 @task(log_prints=True)  # 启用任务的日志打印
 def print_hello():
+    bye()
     print(1+1)
 
 # 2. 定义流程：调用任务
