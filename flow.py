@@ -9,7 +9,7 @@ def bye():
 @task(log_prints=True)  # 启用任务的日志打印
 def print_hello():
     t = bye()
-    print("bye-hello")
+    print(t+"bye-hello")
     print(1+1)
 
 # 2. 定义流程：调用任务
