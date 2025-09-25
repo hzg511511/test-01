@@ -20,6 +20,6 @@ def test_task():
     print(response)
 
 
-@flow(name="测试流程", log_prints=True)
+@flow(log_prints=True)
 def test_flow():
     test_task()
